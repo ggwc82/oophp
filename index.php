@@ -15,3 +15,6 @@ echo "Dogs have " . \ggwc82\ChapterTwo\Dog::legCount() . " legs. " . PHP_EOL;
 
 $whiskers = new \ggwc82\ChapterTwo\Cat();
 echo $whiskers->talk() . PHP_EOL;
+
+$felix = new \ggwc82\ChapterTwo\AegeanCat();
+echo $felix->talk() . PHP_EOL;
