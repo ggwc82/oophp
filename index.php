@@ -18,3 +18,6 @@ echo $whiskers->talk() . PHP_EOL;
 
 $felix = new \ggwc82\ChapterTwo\AegeanCat();
 echo $felix->talk() . PHP_EOL;
+
+$bob = new \ggwc82\ChapterTwo\Person("Bob");
+echo $bob . PHP_EOL;
