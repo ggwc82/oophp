@@ -2,10 +2,9 @@
 
 namespace ggwc82\ChapterTwo;
 
-class Dog implements Mammal
+class Dog extends Mammal
 {
     private $talkcount = 0;
-    private static $legCount = 4;
 
     public function talk(): string
     {
@@ -16,15 +15,5 @@ class Dog implements Mammal
     public function getTalkCount(): int
     {
         return $this->talkcount;
-    }
-
-    public function feed(Food $food): string
-    {
-        return "Eaten: " . $food->getFood();
-    }
-
-    public static function legCount(): int
-    {
-        return self::$legCount;
     }
 }

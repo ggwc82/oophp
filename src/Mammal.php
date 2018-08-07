@@ -2,11 +2,19 @@
 
 namespace ggwc82\ChapterTwo;
 
-interface Mammal
+abstract class Mammal
 {
-    public function talk(): string;
+    private static $legCount = 4;
 
-    public function feed(Food $food): string;
+    public abstract function talk(): string;
 
-    public static function legCount(): int;
+    public function feed(Food $food): string
+    {
+        return "Eaten: " . $food->getFood();
+    }
+
+    public static function legCount(): int
+    {
+        return self::$legCount;
+    }
 }
