@@ -2,20 +2,13 @@
 
 namespace ggwc82\ChapterTwo;
 
-class Dog implements Mammal
+class Cat implements Mammal
 {
-    private $talkcount = 0;
     private static $legCount = 4;
 
     public function talk(): string
     {
-        $this->talkcount++;
-        return "Woof!";
-    }
-
-    public function getTalkCount(): int
-    {
-        return $this->talkcount;
+        return "Meow.";
     }
 
     public function feed(Food $food): string

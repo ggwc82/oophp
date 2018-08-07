@@ -12,3 +12,6 @@ $dogFood = new \ggwc82\ChapterTwo\Food("Dog Food");
 echo $oscar->feed($dogFood) . PHP_EOL;
 
 echo "Dogs have " . \ggwc82\ChapterTwo\Dog::legCount() . " legs. " . PHP_EOL;
+
+$whiskers = new \ggwc82\ChapterTwo\Cat();
+echo $whiskers->talk() . PHP_EOL;
