@@ -1,0 +1,15 @@
+{
+    "name": "ggwc82/oophp",
+    "authors": [
+        {
+            "name": "ggwc82",
+            "email": "ggwc82@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ggwc82\\ChapterTwo\\": "src/"
+        }
+    },
+    "require": {}
+}
