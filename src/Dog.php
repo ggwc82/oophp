@@ -16,4 +16,9 @@ class Dog
     {
         return $this->talkcount;
     }
+
+    public function feed(Food $food): string
+    {
+        return "Eaten: " . $food->getFood();
+    }
 }
