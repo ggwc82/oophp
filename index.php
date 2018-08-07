@@ -21,3 +21,15 @@ echo $felix->talk() . PHP_EOL;
 
 $bob = new \ggwc82\ChapterTwo\Person("Bob");
 echo $bob . PHP_EOL;
+
+$regions = [
+    new \ggwc82\ChapterTwo\City('London'),
+    new \ggwc82\ChapterTwo\Town('Rugby'),
+    new \ggwc82\ChapterTwo\Village('Dunchurch'),
+    new \ggwc82\ChapterTwo\City('San Francisco'),
+    new \ggwc82\ChapterTwo\Town('Lutterworth')
+];
+
+foreach ($regions as $region) {
+    echo $region->getInfo() . "\n";
+}
