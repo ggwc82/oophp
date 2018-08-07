@@ -10,3 +10,5 @@ for ($talk = 1; $talk <= 10; $talk++) {
 
 $dogFood = new \ggwc82\ChapterTwo\Food("Dog Food");
 echo $oscar->feed($dogFood) . PHP_EOL;
+
+echo "Dogs have " . \ggwc82\ChapterTwo\Dog::legCount() . " legs. " . PHP_EOL;
